@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <link href="Offres.css" rel="stylesheet" type="text/css" />
+        <title>Mille sentiers d'Asie</title>
+			
+    </head>
+    <body>
+<!-- Bare de navigation -->
+        <nav>
+            <ul>
+                <li><img src="Logo/2ytransp.png" alt="logo"/></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Offres.html">Offres</a></li>
+                <li class="dropdown">
+                    <a class="dropbtn">Pays</a>
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+                </li>
+                <li class="seconnecter"><a href="#Seconnecter"><img src="Logo/user.png" alt="logo_user"/>Se connecter</a></li>
+            </ul>
+        </nav>
+<!-- Image top -->
+				<div class="imagetop">
+					<img src="Images-Offres/imagetop.jpg" alt="spring">
+				</div>
+<!-- Image offre -->
+			<div class="offres1">
+				<div id="img1" onMouseOver="show('textimg1')" onMouseOut="hide('textimg1')"><p id="textimg1">Découvrir !</p></div>
+				<div id="img2"><p>Découvrir !</p></div>
+			</div>
+
+      <script type="text/javascript">
+				function show(id) {
+					document.getElementById(id).style.visibility = "visible";
+				}
+				function hide(id) {
+					document.getElementById(id).style.visibility = "hidden";
+				}
+		</script>  
+    </body>
+</html>
