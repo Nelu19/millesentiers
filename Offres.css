@@ -1,8 +1,9 @@
 body {
     margin:0;
     padding: 0;
+    background-color:#333;
 }             
-/* Bare de navigation */
+													/* Bare de navigation */
 
 nav ul {
     list-style-type: none;
@@ -84,45 +85,110 @@ nav .handle{
     color: white;
     display: none;
 }
-                                   /* Image top */
+
+#h1_first{
+	text-align:center;
+	font-family:Susanna;
+	color: #d79100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+	font-size: 56px;
+    line-height: 40px;
+	padding-top: 20px;
+	position:relative;
+	margin-bottom: 0px;
+}
+
+.offre_thailande, .offre_japon, .offre_vietnam
+{
+    text-align: center;
+}
+
+#img_1,#img_2,#img_3,#img_4,#img_5,#img_7,#img_8,#img_9
+{
+    height:430px;
+    padding-right:40px;
+}
+
+#img_6
+{
+    width: 303px;
+    padding-right:40px;
+}
+
+.bloc_offre_voyage
+{
+    margin-bottom:40px;
+}
+#voyages_en_thailande, #voyages_au_japon, #voyages_au_vietnam
+{
+    text-align:center;
+	font-family:Susanna;
+	color: #d79100;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+	font-size: 51px;
+    line-height: 60px;
+	padding-top: 20px;
+	position:relative;
+	margin-bottom: 50px;
+}
+
+#h2_first
+{
+	font-family:Calibri Light;
+	color:grey;
+    font-size: 23px;
+    letter-spacing: 2px;
+	text-align:center;	
+	text-transform: uppercase;
+	position:relative;
+}
+
+
+
+
+
+												   /* @media phone */
+@media screen and (max-width: 480px) {
+                                    /* Bare de navigation */
+    nav ul li {
+        width: 100%;
+        padding: 3px;
+        text-align: center;
+        margin-top: -10px;
+
+    }
+    nav li.seconnecter{
+        margin-right: -15px;
+    }
+    nav ul li img{
+        display: none;
+    }
+    nav .dropdown-content{
+        margin-left: 59%;
+        margin-top: -46px
+    }
+	
+														/* Image top */
 .imagetop {
-		margin-top:50px;
+		margin-top:0px;
 		width: 100%;
 	}
-	
-.imagetop img {
-	width: 1920px;
-}
-
-																		/* Images Offres1 */
+													/* Images Offres1 */
 .offres1{
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	width: 1270px;
+	display: none;
 }
-
-.offres1 #img1 {
-	background-image: url(Images-Offres/chine.jpg);
-	background-repeat:no-repeat;
-	transition: background-color 1s;
-	width: 635px;
-	height: 363px;
-	position: absolute;
+#img1 {
+		position: relative;
+		margin-top:0px;
+		width: 100%;
 }
-
-.offres1 #img2 {
-	background-image: url(Images-Offres/thai.jpg);
-	background-repeat:no-repeat;
-	transition: background-color 1s;
-	width: 635px;
-	height: 363px;
-	position: relative;
-	margin-left: 635px;
-	
-}
-
+#img2 {
+		position: relative;
+		margin-top:0px;
+		width: 100%;
+	}
 
 
 .offres1 #img1:hover  {
@@ -146,33 +212,10 @@ nav .handle{
   background-color: inherit;
   content: ' ';
 }
-
-
-/* @media phone */
-@media screen and (max-width: 480px) {
-                                    /* Bare de navigation */
-    nav ul li {
-        width: 100%;
-        padding: 3px;
-        text-align: center;
-        margin-top: -10px;
-
-    }
-    nav li.seconnecter{
-        margin-right: -15px;
-    }
-    nav ul li img{
-        display: none;
-    }
-    nav .dropdown-content{
-        margin-left: 59%;
-        margin-top: -46px
-    }
-	
-	
-	/* @media tablete */
+}
+												/* @media tablete */
 @media (min-width: 481px) and (max-width: 559px) {
-									/* Bare de navigation */
+											/* Bare de navigation */
 
 nav ul {
     list-style-type: none;
@@ -255,8 +298,8 @@ nav .handle{
     color: white;
     display: none;
 }
-	
-	/* @media notebook */
+}
+														  /* @media notebook */
 @media (min-width: 560px) and (max-width: 800px) {
 														/* Bare de navigation */
     nav ul li {
@@ -276,6 +319,15 @@ nav .handle{
         margin-left: 59%;
         margin-top: -46px
     }
+	.imagetop {
+		display: none;
+		margin-top: 0px;
+		width: 100%;
+	}
 	
-							
+.imagetop img {
+	position: relative;
+	width: 100%;
+}
+}
 	
